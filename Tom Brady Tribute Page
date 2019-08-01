@@ -1,0 +1,58 @@
+#HTML Code
+
+<div id = "main">
+  <h1 id = "title"> Tom Brady </h1>
+  <h2> Quarterback of the New England Patriots, Greatest of All Time, 4 time super bowl MVP and 6 time super bowl champion </h2>
+  
+  <div id = "img-div">
+    <img id = "image" src = "https://usatpatriotswire.files.wordpress.com/2018/10/gettyimages-10457389841.jpg?w=1024&h=614&crop=1" atl = "Tom Brady" </img
+  </div>
+    <p id = "img-caption"> Tom Brady the GOAT </p>
+    <p> Thomas Edward Patrick Brady Jr. (born August 3, 1977) is an American football quarterback for the New England Patriots of the National Football League (NFL). He has won six Super Bowls, the most of any football player ever, and due to his numerous accomplishments, records, and accolades, he is regarded by many in the NFL world as the greatest quarterback in NFL history. <br> <br> After playing college football for the University of Michigan, Brady was drafted by the Patriots in the sixth round of the 2000 NFL Draft. Due to his late selection, Brady is considered the biggest "steal" in the history of the NFL Draft. In Brady's seventeen seasons as a starter,[a] he has played in nine Super Bowls with the Patriots, and is one of only two quarterbacks to win the Super Bowl in their first season as a starter (the other being Kurt Warner). Brady holds most of the postseason quarterback records, leading all players in postseason touchdowns, passing yards, and completions, while owning the corresponding Super Bowl records as well. </p>
+    
+    <p id = "tribute-info"> Brady has won four Super Bowl MVP awards (Super Bowl XXXVI, XXXVIII, XLIX, and LI), the most ever by a player, as well as three league MVP awards (2007, 2010, 2017); he is the oldest player to have received either award. Brady has also been selected to 14 Pro Bowls, and has led his team to more division titles (16) than any other quarterback in NFL history. He is fourth all-time in career passing yards for regular season play, third in career touchdown passes, fourth in career passer rating, and fourteenth in postseason career passer rating. For regular season and postseason combined, Brady is first all-time in career passing yards and touchdown passes. The only quarterback to reach 200 regular-season wins, Brady is the winningest quarterback in NFL history. With a postseason record of 30–10, he is first all-time in playoff wins and appearances for an NFL player. Brady has led the Patriots to an NFL-record eight consecutive AFC championship games since 2011 (thirteen overall), and has never had a losing season as a starting quarterback. He is tied for the record for the longest touchdown pass at 99 yards to Wes Welker. <br> <br> For his alleged involvement in the highly publicized Deflategate football-tampering scandal, Brady was suspended for the first four games of the 2016 season. Brady and the Patriots won two of the next three Super Bowls, making him the record holder for most Super Bowl wins by a player, and the oldest quarterback to win a Super Bowl, at 41 </p>
+  <a href = "https://en.wikipedia.org/wiki/Tom_Brady" target = "_blank" id = "tribute-link"> Click here for more  information on Tom Brady</a>
+</div> 
+
+
+#CSS Code 
+body {
+  text-align: center; 
+  background-color: black;
+}
+
+h1 {
+  font-family: Sans-serif; 
+  font-size: 80px; 
+  color: blue;
+  background-color: red; 
+}
+
+h2 {
+  color: blue;
+  font-size: 30px; 
+}
+
+#image {
+  width: 100%;
+  height: auto;
+  max-width: 625px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+#img-caption { 
+font-family: Sans-serif;
+}
+
+p {
+  font-family: Sans-serif;  
+  background-color: black;
+  color: white;
+}
+
+#tribute-link
+{
+  font-size: 40px; 
+}
