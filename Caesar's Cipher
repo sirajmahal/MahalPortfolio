@@ -1,0 +1,80 @@
+#Transferred project over from Udemy Python Bootcamp, this was the final capstone project done in Jupyter notebooks
+
+#Encryption Code
+
+#ECRPYTION ONLY CODE
+import string 
+import collections 
+
+def caesar(rotate_string, number_to_rotate_by):
+    upper = collections.deque(string.ascii_uppercase)
+    lower = collections.deque(string.ascii_lowercase)
+    #want to be able to rotate lower case letters as well 
+    
+    upper.rotate(number_to_rotate_by)
+    lower.rotate(number_to_rotate_by)
+    #rotating both upper and lower 
+    
+    upper = ''.join(list(upper))
+    lower = ''.join(list(lower))
+    #converting the list into a string 
+    
+    #Translate the string now 
+    return rotate_string.translate(str.maketrans(string.ascii_uppercase, upper)).translate(str.maketrans(string.ascii_lowercase, lower))
+
+    #use str.maketrans instead of string.maketrans
+    
+our_string = "Siraj Mahal is the goat"
+
+for i in range(len(string.ascii_uppercase)):
+    print (i, "|", caesar(our_string, i))
+#goes through every iteration of our_string in the caesar cipher and encodes it 
+
+
+#Encryption and Decryption Code 
+#encrpytion and decryption code 
+
+key = 'abcdefghijklmnopqrstuvwxyz'
+
+#encryption 
+def encrypt(n, plaintext):
+    #Encrypt the string and return back the ciphertext 
+    result = '' #have result as an empty string for now 
+    
+    for l in plaintext.lower():
+        try: 
+            i = (key.index(l) + n)%26 
+            result += key[i]
+            
+        except ValueError: 
+            result += l
+            
+    return result.lower()
+
+#decryption 
+def decrypt(n, ciphertext):
+    #decrypt the cipher text and return plaintext 
+    result = '' #empty 
+    
+    for l in ciphertext:
+        try: 
+            i = (key.index(l) - n)%26 
+            result += key[i]
+            
+        except ValueError: 
+            result += l
+    
+    return result 
+
+text = "Siraj Mahal is the goat"
+offset = 5
+
+encrypted = encrypt(offset, text)
+print('Encrypted: ', encrypted)
+
+decrypted = decrypt(offset, encrypted)
+print('Decrypted: ', decrypted)
+    
+    
+    
+    
